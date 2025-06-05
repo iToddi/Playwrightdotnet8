@@ -1,8 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaywrightDemo", "PlaywrightDemo\PlaywrightDemo.csproj", "{2908FCFD-2BC9-41E6-8E0A-1FF5D3263AFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecFlowProject1", "PlaywrightSpecflow\SpecFlowProject1\SpecFlowProject1.csproj", "{8A6456FD-BC62-4215-9241-02B73955A9DF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecFlowProject", "PlaywrightSpecflow\SpecFlowProject1\SpecFlowProject.csproj", "{8A6456FD-BC62-4215-9241-02B73955A9DF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaywrightAPITesting", "PlaywrightAPITesting\PlaywrightAPITesting.csproj", "{DBC38AEA-0B31-494C-A8B0-D359865F3637}"
 EndProject
@@ -30,5 +33,8 @@ Global
 		{064E257B-E87A-44F2-9708-442F526B08A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{064E257B-E87A-44F2-9708-442F526B08A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{064E257B-E87A-44F2-9708-442F526B08A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
