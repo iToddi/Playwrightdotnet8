@@ -1,5 +1,6 @@
 using System.IO;
 using System.Reflection;
+using NUnit.Framework.Legacy;
 
 namespace PlaywrightDemo;
 
@@ -32,7 +33,8 @@ public class Tests
         await page.FillAsync("#Password", "password");
         await page.ClickAsync("text=Log in");
         var isExist = await page.Locator("text='Employee Details'").IsVisibleAsync();
-        Assert.IsTrue(isExist);
+        ClassicAssert.IsTrue(isExist);
+
     }
 
     [Test]
@@ -53,7 +55,7 @@ public class Tests
         await loginPage.ClickLogin();
         await loginPage.Login("admin", "password");
         var isExist = await loginPage.IsEmployeeDetailsExists();
-        Assert.IsTrue(isExist);
+        ClassicAssert.IsTrue(isExist);
     }
 
 
@@ -108,7 +110,7 @@ public class Tests
             x => x.Url.Contains("/Employee") && x.Status == 200);
 
         var isExist = await loginPage.IsEmployeeDetailsExists();
-        Assert.IsTrue(isExist);
+        ClassicAssert.IsTrue(isExist);
     }
 
     [Test]
