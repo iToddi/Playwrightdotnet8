@@ -14,19 +14,21 @@ public class LoginPageUpgraded
     private ILocator _txtPassword => _page.GetByLabel("Password");
     private ILocator _btnLogin => _page.GetByRole(AriaRole.Button, new PageGetByRoleOptions { Name = "Log in" });
 
-    private ILocator _lnkEmployeeDetails =>
-        _page.GetByRole(AriaRole.Link, new PageGetByRoleOptions { Name = "Employee List" });
+    private ILocator _lnkEmployeeDetails => _page.GetByRole(AriaRole.Link, new PageGetByRoleOptions { Name = "Employee List" });
 
     private ILocator _lnkEmployeeLists => _page.Locator("text='Employee List'");
 
 
     public async Task ClickLogin()
     {
-        await _page.RunAndWaitForNavigationAsync(async () => { await _lnkLogin.ClickAsync(); },
-            new PageRunAndWaitForNavigationOptions
-            {
-                UrlString = "**/Login"
-            });
+        //await _page.RunAndWaitForNavigationAsync(async () => { await _lnkLogin.ClickAsync(); },new PageRunAndWaitForNavigationOptions
+
+        //    {
+        //        UrlString = "**/Login"
+        //    });
+
+        await _lnkLogin.ClickAsync();
+
     }
 
     public async Task ClickEmployeeList()
