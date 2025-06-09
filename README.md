@@ -1,6 +1,6 @@
 # Playwrightdotnet
 Contains a repository for `Playwright` with .NET7.
-I downloaded this repo from a Playwright tutoriol and converted it to .net8 from .net7. 
+I downloaded this repo from a Playwright tutoriol and converted it to .net8. 
 It's purpose is to help me learn about Playwirght as replacement for Selenium.
 
 
